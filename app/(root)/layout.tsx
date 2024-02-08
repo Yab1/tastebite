@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={agentFB.className}>{children}</body>
+      <body className={`${agentFB.className} hide-scrollbar`}>{children}</body>
     </html>
   );
 }
