@@ -10,7 +10,7 @@ import smoke from "@/public/images/smoke.svg";
 
 export default function HeroSection() {
   return (
-    <section className="bg-black h-screen relative">
+    <section className="bg-black h-screen relative overflow-hidden">
       <nav className="flex items-center justify-center pr-20 py-5 relative z-10">
         <ul className="flex gap-12 flex-1 justify-center">
           <li>
