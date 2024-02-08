@@ -2,10 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  overflow: hidden;
+.hide-scrollbar {
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
 }
 
 .linear-gradient {
   @apply bg-gradient-to-r from-yellow-400 to-orange-600;
+}
+
+.card-width {
+  width: calc(100vw / 4);
+}
+.card-title {
+  @apply font-bold text-[54px];
+}
+
+.collapsed-card {
+  @apply card-width flex flex-col justify-between items-center pt-20;
+}
+
+.expanded-card {
+  @apply w-[1000px];
+}
+
+.bg-dark-slate-wood-gradient {
+  background-color: #1c1d22;
+  background-image: linear-gradient(62deg, #1c1d22 0%, #775147 100%);
+}
+
+.bg-wood-brown-gradient {
+  background: rgb(128, 107, 73);
+  background: radial-gradient(
+    circle,
+    rgba(128, 107, 73, 1) 0%,
+    rgba(28, 18, 14, 1) 100%
+  );
+}
+
+.bg-charcoal-gray-gradient {
+  background: rgb(57, 57, 57);
+  background: radial-gradient(
+    circle,
+    rgba(57, 57, 57, 1) 0%,
+    rgba(29, 29, 29, 1) 100%
+  );
+}
+
+.bg-aquamarine-turquoise-gradient {
+  background: rgb(151, 255, 246);
+  background: radial-gradient(
+    circle,
+    rgba(151, 255, 246, 1) 0%,
+    rgba(0, 184, 224, 1) 100%
+  );
 }
