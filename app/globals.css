@@ -20,11 +20,11 @@
   width: calc(100vw / 4);
 }
 .card-title {
-  @apply font-bold text-[54px];
+  @apply font-bold text-[45px] relative z-10;
 }
 
 .collapsed-card {
-  @apply card-width flex flex-col justify-between items-center pt-20;
+  @apply card-width flex flex-col justify-between items-center pt-20 relative overflow-hidden;
 }
 
 .expanded-card {
